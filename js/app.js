@@ -13,7 +13,7 @@ let valor = parseInt(prompt('Ingrese un numero'));
 let multiplo = parseInt(prompt('Ingresa un limite'));
 
 for (let index = 0; index < multiplo; index++) {
-    let resultado = valor * 1;
+    let resultado = valor * index;
     console.log(valor + ' * ' + index + ' = ' + resultado);
 }
 
