@@ -1,0 +1,16 @@
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

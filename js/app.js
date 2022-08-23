@@ -3,8 +3,12 @@
 let edad = parseInt (prompt('Ingresa tu edad'));
 
 while (edad < 18) {
-    console.log('No puedes ingresar, eres menor de 18');
     edad = parseInt(prompt('Ingresa tu edad'));
+    if (edad < 18) {
+        alert('Eres menor, no puedes ingresar');
+    }else{
+        alert('Bienvenidos a java script');
+    }
 }
 
 // Prompt - Multiplicacion
@@ -24,12 +28,15 @@ let palabraClave = 'cafe';
 for (let index = 1; index <= 3; index++){
     let palabraUsuario = prompt ('Ingrese su Password');
     if (palabraClave === palabraUsuario) {
-        console.log('Respuesta Correcta');
+        console.log ('Respuesta Correcta');
+        alert('Respuesta Correcta');
         break;
     }else{
-        console.log('Te quedan ' + (3 - index) + ' intentos');
+        console.log ('Te quedan ' + (3 - index) + ' intentos');
+        alert('Te quedan ' + (3 - index) + ' intentos');
     }
     if (index == 3) {
         console.log('Actualiza para intentarlo de nuevo :(');
+        alert('Actualiza para intentalo de nuevo')
     }
 }
