@@ -1,11 +1,15 @@
 
-let ingresarNombre = prompt('Ingresa tu nombre');
-let ingresarApellido = prompt('Ingresar apellido');
-let bienvenidos = false;
+let ingresarNombre = prompt('Ingrese su nombre');
+let ingresarApellido = prompt('Ingrese su apellido');
 
-do {
-    alert('Hola, ' + ingresarNombre + ' ' + ingresarApellido)
-} while (bienvenidos);
+
+while ((ingresarNombre !== ' ') && (ingresarApellido !== ' ')) {
+    alert('Error: ingrese su nombre y apellido');
+    ingresarNombre = prompt('Ingrese su nombre');
+    ingresarApellido = prompt ('Ingrese su apellido');
+}
+
+alert('Bienvenido/a ' + ingresarNombre + ' ' + ingresarApellido);
 
 let preguntas = false;
 do {
