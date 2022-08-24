@@ -18,22 +18,23 @@ alert('Bienvenido/a ' + ingresarNombre + ' ' + ingresarApellido);
 let bienvenido = false;
 do {
     alert(ingresarNombre + ' ' + ingresarApellido + ', contesta las siguientes preguntas, por favor');
-} while (bienvenido) {
-    
-}
+} while (bienvenido) 
 
 let ingresarClub = prompt('De que club eres hincha?');
-let ingresarColor = prompt('Cual es tu color preferido?');
 
-while (ingresarClub == '' && ingresarColor == '') {
+while (ingresarClub == '') {
     alert('Error: Conteste las preguntas, por favor');
     ingresarClub = prompt('De que club eres hincha?');
+}
+
+let ingresarColor = prompt('Cual es tu color preferido?');
+
+while (ingresarColor == '') {
+    alert('Error: Conteste las preguntas, por favor');
     ingresarColor = prompt('Cual es tu color preferido?');
 }
 
 alert('Gracias por responder, sos hincha de ' + ingresarClub + ' y tu color preferido es ' + ingresarColor );
-
-
 
 
 let palabraClave = 'cafe';
