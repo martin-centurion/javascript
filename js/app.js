@@ -26,7 +26,7 @@ for (let index = 0; index < multiplo; index++) {
 let palabraClave = 'cafe';
 
 for (let index = 1; index <= 3; index++){
-    let palabraUsuario = prompt ('Ingrese su Password');
+    let palabraUsuario = prompt ('Ingrese su Password (pass: cafe)');
     if (palabraClave === palabraUsuario) {
         console.log ('Respuesta Correcta');
         alert('Respuesta Correcta');
