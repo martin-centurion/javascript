@@ -19,7 +19,7 @@ do {
 for (let index = 1; index <= 3; index++) {
     let ingresarClub = prompt('De que club eres hincha?');
     let ingresarColor = prompt('Cual es tu color preferido?');
-    alert('Gracias por responder, sos hincha de ' + ingresarClub + ' y tu signo es ' + ingresarColor );
+    alert('Gracias por responder, sos hincha de ' + ingresarClub + ' y tu color preferido es ' + ingresarColor );
     if ((ingresarClub !== '') && (ingresarColor !== '')) {
         break;
     } else {
