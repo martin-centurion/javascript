@@ -1,35 +1,35 @@
-// while
 
-let edad = parseInt (prompt('Ingresa tu edad'));
+let ingresarNombre = prompt('Ingresa tu nombre');
+let ingresarApellido = prompt('Ingresar apellido');
+let bienvenidos = false;
 
-while (edad < 18) {
-    edad = parseInt(prompt('Ingresa tu edad'));
-    if (edad < 18) {
-        alert('Eres menor, no puedes ingresar');
-    }else{
-        alert('Bienvenidos a java script');
+do {
+    alert('Hola, ' + ingresarNombre + ' ' + ingresarApellido)
+} while (bienvenidos);
+
+let preguntas = false;
+do {
+    alert(ingresarNombre + ', contesta las siguientes preguntas, por favor')
+} while (preguntas);
+
+for (let index = 1; index <= 3; index++) {
+    let ingresarClub = prompt('De que club eres hincha?');
+    let ingresarColor = prompt('Cual es tu color preferido?');
+    alert('Gracias por responder, sos hincha de ' + ingresarClub + ' y tu signo es ' + ingresarColor );
+    if ((ingresarClub !== '') && (ingresarColor !== '')) {
+        break;
+    } else {
+        alert('Conteste las preguntas por favor')
     }
 }
 
-// Prompt - Multiplicacion
-
-let valor = parseInt(prompt('Ingrese un numero'));
-let multiplo = parseInt(prompt('Ingresa un limite'));
-
-for (let index = 0; index < multiplo; index++) {
-    let resultado = valor * index;
-    console.log(valor + ' * ' + index + ' = ' + resultado);
-}
-
-
-// For
 let palabraClave = 'cafe';
 
 for (let index = 1; index <= 3; index++){
     let palabraUsuario = prompt ('Ingrese su Password (pass: cafe)');
     if (palabraClave === palabraUsuario) {
         console.log ('Respuesta Correcta');
-        alert('Respuesta Correcta');
+        alert('Gracias por su tiempo, ' + ingresarNombre + '. Bienvenido a programación');
         break;
     }else{
         console.log ('Te quedan ' + (3 - index) + ' intentos');
