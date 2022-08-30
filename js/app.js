@@ -51,6 +51,6 @@ for (let index = 1; index <= 3; index++){
     }
     if (index == 3) {
         console.log('Actualiza para intentarlo de nuevo :(');
-        alert('Actualiza para intentalo de nuevo')
+        alert('Actualiza para intentalo de nuevo');
     }
 }
