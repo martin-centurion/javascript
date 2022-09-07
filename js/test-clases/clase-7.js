@@ -24,7 +24,7 @@ function mayorQue(n){
   }
 
   let suma = asignarOp('sumar');
-  let resta = asignarOp('restar')
+  let resta = asignarOp('restar');
 
   console.log(suma(12,5));
   console.log(resta(12,5));

@@ -1,7 +1,7 @@
 
 class Productos {
     constructor(nombre, precio, color) {
-        this.name = nombre;
+        this.name = nombre.toL;
         this.price = precio;
         this.color = color;
         this.agregarCarrito = () => {
@@ -26,20 +26,20 @@ let comprar = true;
 
 while (comprar) {
     let producto = prompt('Escoja producto:\nYerba\nJabon\nAzucar');
-if (producto === 'yerba') {
-    producto1.agregarCarrito();
-    alert('Seleccionaste ' + producto);
-} else if (producto === 'jabon'){
-    producto2.agregarCarrito();
-    alert('Seleccionaste ' + producto);
-} else if (producto === 'azucar'){
-    producto3.agregarCarrito();
-    alert('Seleccionaste ' + producto);
-} else if (producto === 'salir') {
-    comprar = false;
-    alert('Los productos escogidos:\n' + Carrito.join('\n') + '\nPrecio total de compra: $' + total);
-} else {
-    alert('No compraste nada');   
+    if (producto === 'yerba') {
+        producto1.agregarCarrito();
+        alert('Seleccionaste ' + producto);
+    } else if (producto === 'jabon'){
+        producto2.agregarCarrito();
+        alert('Seleccionaste ' + producto);
+    } else if (producto === 'azucar'){
+        producto3.agregarCarrito();
+        alert('Seleccionaste ' + producto);
+    } else if (producto === 'salir') {
+        comprar = false;
+        alert('Los productos escogidos:\n' + Carrito.join('\n') + '\nPrecio total de compra: $' + total);
+    } else {
+        alert('No compraste nada');   
 }
 }
 
